@@ -62,7 +62,10 @@ class SampleListener(Leap.Listener):
             detectedHand = frame.hands[0]
             extended_finger_list = frame.fingers.extended()
             readCharacter(extended_finger_list, detectedHand)
+        else: 
+            print " "
 
+            
         # rightHand = frame.hands[0]
         # rightFingers = rightHand.fingers
         # extended_finger_list = frame.fingers.extended()
